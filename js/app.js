@@ -1,42 +1,42 @@
 eventListeners();
 
-// function eventListeners() {
-//   const ui = new UI();
+function eventListeners() {
+  const ui = new UI();
 
-//   //preloader
-//   window.addEventListener("load", function() {
-//     ui.hidePreloader();
-//   });
-//   //nav btn
-//   document.querySelector(".navBtn").addEventListener("click", function() {
-//     ui.showNav();
-//   });
-//   //control video
-//   document.querySelector(".video-switch").addEventListener("click", function() {
-//     ui.videoControls();
-//   });
-//   //submit form
-//   document
-//     .querySelector(".drink-form")
-//     .addEventListener("submit", function(event) {
-//       event.preventDefault();
-//       const name = document.querySelector(".input-name").value;
-//       const lastName = document.querySelector(".input-lastname").value;
-//       const email = document.querySelector(".input-email").value;
+  //preloader
+  window.addEventListener("load", function() {
+    ui.hidePreloader();
+  });
+  //nav btn
+  document.querySelector(".navBtn").addEventListener("click", function() {
+    ui.showNav();
+  });
+  //control video
+  document.querySelector(".video-switch").addEventListener("click", function() {
+    ui.videoControls();
+  });
+  //submit form
+  document
+    .querySelector(".drink-form")
+    .addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.querySelector(".input-name").value;
+      const lastName = document.querySelector(".input-lastname").value;
+      const email = document.querySelector(".input-email").value;
 
-//       let value = ui.checkEmpty(name, lastName, email);
+      let value = ui.checkEmpty(name, lastName, email);
 
-//       if (value) {
-//         let customer = new Customer(name, lastName, email);
+      if (value) {
+        let customer = new Customer(name, lastName, email);
 
-//         ui.addCustomer(customer);
+        ui.addCustomer(customer);
 
-//         ui.showFeedback("customer added to the list", "success");
-//         ui.clearFields();
-//       } else {
-//         ui.showFeedback("some form values are empty", "error");
-//       }
-//     });
+        ui.showFeedback("customer added to the list", "success");
+        ui.clearFields();
+      } else {
+        ui.showFeedback("some form values are empty", "error");
+      }
+    });
 
   // // display modal
   const links = document.querySelectorAll(".work-item-icon");
@@ -59,9 +59,9 @@ eventListeners();
 function UI() {}
 
 //hide preloader
-UI.prototype.hidePreloader = function() {
-  document.querySelector(".preloader").style.display = "none";
-};
+// UI.prototype.hidePreloader = function() {
+//   document.querySelector(".preloader").style.display = "none";
+// };
 
 //show nav
 UI.prototype.showNav = function() {
