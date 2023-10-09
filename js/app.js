@@ -39,20 +39,20 @@ function eventListeners() {
     });
 
   // // display modal
-  // const links = document.querySelectorAll(".work-item-icon");
+  const links = document.querySelectorAll(".work-item-icon");
 
-  // links.forEach(function(item) {
-  //   item.addEventListener("click", function(event) {
-  //     ui.showModal(event);
-  //   });
-  // });
+  links.forEach(function(item) {
+    item.addEventListener("click", function(event) {
+      ui.showModal(event);
+    });
+  });
 
-  // hide modal
-  //   document
-  //     .querySelector(".work-modal-close")
-  //     .addEventListener("click", function() {
-  //       ui.closeModal();
-  //     });
+  hide modal
+    document
+      .querySelector(".work-modal-close")
+      .addEventListener("click", function() {
+        ui.closeModal();
+      });
 }
 
 //constructor function
