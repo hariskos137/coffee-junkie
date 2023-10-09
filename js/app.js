@@ -58,10 +58,10 @@ function eventListeners() {
 //constructor function
 function UI() {}
 
-//hide preloader
-// UI.prototype.hidePreloader = function() {
-//   document.querySelector(".preloader").style.display = "none";
-// };
+hide preloader
+UI.prototype.hidePreloader = function() {
+  document.querySelector(".preloader").style.display = "none";
+};
 
 //show nav
 UI.prototype.showNav = function() {
